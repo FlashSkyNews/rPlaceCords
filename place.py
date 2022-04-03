@@ -23,6 +23,6 @@ for i in range(OFFSET_LEFT, width, WIDTH_OF_PIXEL):
             num += 1
             draw.line(((i, j), (i + WIDTH_OF_PIXEL, j)), fill="black", width=1)
             draw.line(((i, j), (i, j + HEIGHT_OF_PIXEL)), fill="black", width=1)
-            draw.text((i+3, j+3), f"Nr. {num}\nx{TOP_LEFT_X + (i//WIDTH_OF_PIXEL)}\ny{(TOP_LEFT_Y + j//HEIGHT_OF_PIXEL)}", font=font, fill=(0, 0, 0)) # fill=(0,0,0) is the color of the text
+            draw.text((i+3, j+3), f"X: {TOP_LEFT_X + (i//WIDTH_OF_PIXEL)}\nY: {(TOP_LEFT_Y + j//HEIGHT_OF_PIXEL)}", font=font, fill=(16, 255, 67)) # fill=(0,0,0) is the color of the text
 
 im.save("output.png")
